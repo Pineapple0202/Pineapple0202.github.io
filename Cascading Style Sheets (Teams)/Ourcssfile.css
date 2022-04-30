@@ -10,6 +10,34 @@ html {
 body {
     display: table-cell;
     vertical-align: middle;
+    background: url("big.jpeg") repeat-y top;
+    /* Eric- added background image and adjusted the properties of the background image. Also aplied background shorthand*/
+}
+ table {
+     width: 40;
+     background-color:rgb(229, 151, 112);   
+     font-family: 'Courier New', Courier, monospace;
+    margin: auto;
+    /*Eric- added background color, font tamily and adjusted the margin for the table*/
+}
+td:hover {
+    background-color: rgb(72, 189, 210);
+}
+h4 {
+    font-family:"copperplate", Papyrus, fantasy;
+    font-size: 40px;
+    color:rgb(7, 68, 39);
+    text-align: center;
+
+}
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /*Eric- adjusted margin for all images*/
+}
+.center {
+    text-align:center;
 }
 #Gible{
     font-weight: bold;
@@ -17,4 +45,8 @@ body {
 }
 .list{
     font-weight: bolder;
+}
+.imgs {
+    background-color: rgba(250, 235, 215,0.7); 
+
 }
