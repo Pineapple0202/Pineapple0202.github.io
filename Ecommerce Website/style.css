@@ -138,3 +138,17 @@ p{
 small{
     color: #555;
 }
+/*------testimonial-----*/
+.testimonial{
+    padding-top: 70px;
+}
+.testimonial .col-3{
+    text-align: center;
+    padding: 40px 20px;
+    
+}
+.testimonial .col-3 img{
+    width: 50px;
+    margin-top: 20px;
+    border-radius: 50%;
+}
