@@ -2,6 +2,7 @@
 <html lang="eng">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=decive-width, initial-scale=1.0">
         <title>HnadCraftFashionx</title>
         <link rel="stylesheet" href="style.css">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -15,7 +16,7 @@
                 <img src="images/logo.png" width="125px">
             </div>
             <nav>
-                <ul>
+                <ul id="MenuItems">
                     <li><a href="">Home</a></li>
                     <li><a href="">Products</a></li>
                     <li><a href="">About</a></li>
@@ -25,7 +26,7 @@
                 </ul>
             </nav>  
             <img src="images/cart.png" alt="" width="30px" height="30px">
-            <img src="" alt="" class="menu-icon">
+            <img src="images/menu.png" alt="" class="menu-icon" onclick="menutoggle()">
             </div>
         <div class="row">
            <div class="col-2">
@@ -251,7 +252,7 @@
             <div class="row">
                 <div class="col-3">
                     <i class="fa fa-quote-left" aria-hidden="true"></i>
-                    <p>Lorem Ipsum is simply dummy test of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy test ever</p>
+                    <p>The quality is good but I don't like the color :(</p>
                     <div class="rating">
                         <i class="fa fa-star" aria-hidden="true"></i>
                         <i class="fa fa-star" aria-hidden="true"></i>
@@ -265,8 +266,7 @@
 
                 <div class="col-3">
                     <i class="fa fa-quote-left" aria-hidden="true"></i>
-                    <p>Lorem Ipsum is simply dummy test of the printing and typesetting industry. Lorem Ipsum has been the industry's
-                        standard dummy test ever</p>
+                    <p>I love this Item!</p>
                     <div class="rating">
                         <i class="fa fa-star" aria-hidden="true"></i>
                         <i class="fa fa-star" aria-hidden="true"></i>
@@ -280,8 +280,7 @@
 
                 <div class="col-3">
                     <i class="fa fa-quote-left" aria-hidden="true"></i>
-                    <p>Lorem Ipsum is simply dummy test of the printing and typesetting industry. Lorem Ipsum has been the industry's
-                        standard dummy test ever</p>
+                    <p>Best product I've ever had! Love it!</p>
                     <div class="rating">
                         <i class="fa fa-star" aria-hidden="true"></i>
                         <i class="fa fa-star" aria-hidden="true"></i>
@@ -335,6 +334,23 @@
         <p class="copyright">Copyright 2022 - HnadCraftFashionx</p>
     </div>
 </div>
+<!------js for toggle menu------>
+        <script>
+            var MenuItems = document.getElementById("MenuItems");
+
+            MenuItems.style.maxHeight = "0px";
+
+            function menutoggle(){
+                if(MenuItems.style.maxHeight == "0px")
+                {
+                    MenuItems.style.maxHeight = "200px";
+                }
+                else
+                {
+                    MenuItems.style.maxHeight = "0px";
+                }
+            }
+        </script>
 
     </body>
 </html>
