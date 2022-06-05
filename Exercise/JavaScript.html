@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+<body>
+
+    <h2>Demo JavaScript in Head</h2>
+
+    <p id="demo">A paragraph. </p>
+    <button type="button" onclick="myFunction()">Try me</button>
+
+    <button onclick="window.alert('2+3')">Click me</button>
+    <p>YOU CAN PRINT THIS PAGE.</p>
+    <button onclick="window.print()">Print</button>
+    <p id="demo-1"></p>
+    <p id="demo-2"></p>
+    <button type="button" onclick="myFunction()">WRY</button>
+    <p id="demo-3"></p>
+    <p id="demo-4"></p>
+    
+<script>
+        function myFunction() {
+            document.getElementById('demo').innerHTML = "paragraph changed."
+        }
+        
+        function myFunction(){
+            document.getElementById('demo-2'). innerHTML = "THIS IS ERIC"
+        }
+
+        let a, b, c;
+        a = 5; b = 6; c = a + b;
+
+        document.getElementById('demo-1').innerHTML = c;
+
+        let x = 6; y = 4; z = x + y;
+        document.getElementById('demo-3').innerHTML = 
+        "The vaule of z is:" + z;
+
+        const pi = 3.14;
+        let person = "John Doe?" ;
+        let answer = "Yes, I am!" ;
+
+        document.getElementById("demo-4").innerHTML = pi + "<br>" + person + "<br>" + answer;
+
+
+    </script>
+</body>
+
+</html>
